@@ -112,10 +112,10 @@ int main() {
     int im;
     cout << "Print (0) or not (1): ";
     cin >> im;
-    if (im == 0) cout << tree << endl;
     int i;
     cout << "Iterations: ";
     cin >> i;
+    if (im == 0) cout << tree << endl;
     auto now = chrono::system_clock::now();
     time_t now_time = chrono::system_clock::to_time_t(now);
     tm* local_time = localtime(&now_time);
